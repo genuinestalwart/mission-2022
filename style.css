@@ -1,3 +1,5 @@
+/* Parent Level and Header */
+
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -5,13 +7,13 @@ body {
 header, main {
     margin: 0 75px;
 }
-header, #missions, .section-flex-container {
+header, #missions, .section-flex-container, #div-flex {
     padding: 0 75px;
 }
-header, #missions > div, .section-flex-container {
+header, #missions > div, .section-flex-container, #div-flex {
     display: flex;
 }
-header > * {
+header > *, #div-flex > * {
     width: 50%;
 }
 header > div:first-child {
@@ -20,17 +22,29 @@ header > div:first-child {
 header > div:last-child {
     padding: 0 50px 50px;
 }
+header p:last-child {
+    color: #505050;
+}
+
+/* Common Properties */
+
 h1 {
     border-left: 3px solid;
     border-color: #9ACD32;
     font: 40px 'Yeseva One', cursive;
     padding-left: 10px;
 }
+h2 {
+    font-size: 34px;
+}
+h3 {
+    font-size: 27px;
+}
+h4 {
+    font-size: 20px;
+}
 span {
     color: #FA8072;
-}
-header p:last-child {
-    color: #505050;
 }
 img {
     display: block;
@@ -46,13 +60,12 @@ a {
     padding: 10px 20px;
     text-decoration: none;
 }
+
+/* 3-box Mission Section */
+
 #missions {
     text-align: center;
 }
-h2 {
-    font-size: 34px;
-}
-
 #missions > div {
     text-align: left;
 }
@@ -66,7 +79,7 @@ h2 {
     width: 30%;
 }
 #mission {
-    background-color: #D3D3D3;
+    background-color: #FFE4E1;
 }
 #vision {
     background-color: #FFDEAD;
@@ -75,20 +88,20 @@ h2 {
 #goal {
     background-color: #AFEEEE;
 }
-h4 {
-    font-size: 20px;
-}
+
+/* Middle Sections */
+
 .section-flex-container {
     background-repeat: no-repeat;
     background-size: 15%;
     padding: 75px;
 }
 #section-develop {
-    background-image: url(images/shapes/shape-6.png);
+    background-image: url(images/shapes/shape-1.png);
     background-position: left center;
 }
 #section-build {
-    background-image: url(images/shapes/shape-7.png);
+    background-image: url(images/shapes/shape-2.png);
     background-position: right top;
 }
 .section-image {
@@ -103,9 +116,25 @@ h4 {
 #div-build {
     margin-right: 75px;
 }
-h3 {
-    font-size: 27px;
+
+/* Platform Section */
+
+#section-platform {
+    margin-bottom: 125px;
+    text-align: center;
 }
+#div-flex {
+    text-align: left;
+}
+#div-flex > div:first-child {
+    padding: 0 50px;
+}
+#div-flex > div:last-child {
+    padding-left: 50px;
+}
+
+/* Footer */
+
 footer {
     background-color: #000000;
     padding: 20px 0;
