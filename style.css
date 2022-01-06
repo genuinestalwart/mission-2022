@@ -5,9 +5,11 @@ body {
 header, main {
     margin: 0 75px;
 }
-header, .section-flex-container {
-    display: flex;
+header, #missions, .section-flex-container {
     padding: 0 75px;
+}
+header, #missions > div, .section-flex-container {
+    display: flex;
 }
 header > * {
     width: 50%;
@@ -24,22 +26,57 @@ h1 {
     font: 40px 'Yeseva One', cursive;
     padding-left: 10px;
 }
-h1 span {
+span {
     color: #FA8072;
 }
 header p:last-child {
     color: #505050;
 }
 img {
+    display: block;
     width: 100%;
 }
 a {
     background-image: linear-gradient(90deg, #7B68EE, #6495ED);
     border-radius: 5px;
+    display: inline-block;
     font-weight: 500;
     color: #ffffff;
+    margin: 10px 0;
     padding: 10px 20px;
     text-decoration: none;
+}
+#missions {
+    text-align: center;
+}
+h2 {
+    font-size: 34px;
+}
+
+#missions > div {
+    text-align: left;
+}
+#missions img {
+    width: 45%;
+}
+#mission, #vision, #goal {
+    border-radius: 10px;
+    font-size: 14px;
+    padding: 20px;
+    width: 30%;
+}
+#mission {
+    background-color: #D3D3D3;
+}
+#vision {
+    background-color: #FFDEAD;
+    margin: 0 5%;
+}
+#goal {
+    background-color: #AFEEEE;
+}
+h4 {
+    font-size: 20px;
 }
 .section-flex-container {
     background-repeat: no-repeat;
@@ -67,7 +104,7 @@ a {
     margin-right: 75px;
 }
 h3 {
-    font-size: 25px;
+    font-size: 27px;
 }
 footer {
     background-color: #000000;
